@@ -13,10 +13,20 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+    line-height: 1.25;
+    font-size: 36px;
+    display: block;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
 .row {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .row,
@@ -56,6 +66,7 @@ nav {
 .nav__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav__logo {

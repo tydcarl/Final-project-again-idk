@@ -114,6 +114,10 @@ nav {
   justify-content: space-around;
 }
 
+.nav__link:hover {
+  text-decoration: underline;
+}
+
 .nav__link {
   font-size: 14px;
   font-weight: 600;
@@ -319,14 +323,18 @@ FEATURES â†“
   margin: 0 auto;
 }
 
+.feature {
+  width: calc(100% / 3);
+}
+
 .features {
   display: flex;
-  flex-wrap: wrap;
+flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .feature__row {
-  display: flex;
+display: flex;
 align-items: flex-start;
 padding: 32px 24px;
 
@@ -364,8 +372,19 @@ padding: 32px 24px;
   font-weight: 500;
   color: #7c8ba1;
   line-height: 1.625;
+  
 }
 
+.feature__title {
+  font-size: 24px;
+}
+.feature__para {
+  line-height: 2.25;
+}
+
+.feature__text {
+  margin-left: 16px;
+}
 /* 
 
 QUALITY WORK â†“
@@ -376,6 +395,10 @@ QUALITY WORK â†“
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.quality__img {
+  width: 85%;
 }
 
 /* 

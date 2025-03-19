@@ -399,7 +399,8 @@ QUALITY WORK â†“
 }
 
 .quality__img {
-  width: 85%;
+  width: 100%;
+  z-index: 1;
 }
 
 .section__tag {
@@ -412,6 +413,10 @@ QUALITY WORK â†“
 
 #quality .section__title {
   line-height: 1.25;
+}
+
+#quality .btn {
+  margin-top: 32px;
 }
 
 .quality__description {
@@ -429,6 +434,20 @@ margin-right: 64px;
   font-weight: bold;
   transition: all 300ms;
   margin-top: 12px;
+}
+
+.quality__grid {
+  transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  fill: rgb (100, 21, 255);
+  --tw-text-opacity: 1;
+  color: rgba(100,21, 255, var(--tw-text-opacity));
+  z-index: 0;
+  display: block;
 }
 
 /* 

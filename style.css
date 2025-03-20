@@ -457,10 +457,85 @@ STEPS â†“
 
 */
 
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.step__para {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
+}
+
 #steps .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+} 
+.row {
+  width: 100;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: (16px, 0);
+  letter-spacing: .025em;
+
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+
+.steps__description {
+  padding: 32px 0;
+  padding-left: 64px;
+
+}
+
+.steps__description, .steps__img--wrapper {
+  width: 50%; 
+}
+
+
+
+#steps .step__grid {
+  position: absolute;
+  opacity: .15;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1); 
+  width: 80px;
+  height: 80px;
+  fill: rgba(100, 21, 255);
+  z-index: 1;
 }
 
 /* 

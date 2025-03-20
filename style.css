@@ -479,6 +479,7 @@ STEPS â†“
   display: flex;
   align-items: flex-start;
   margin-top: 32px;
+  gap: 24px;
 }
 
 .step__para {
@@ -539,6 +540,10 @@ STEPS â†“
 
 .steps__description, .steps__img--wrapper {
   width: 50%; 
+}
+
+.steps__img {
+width: 100%;
 }
 
 

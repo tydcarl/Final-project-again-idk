@@ -700,14 +700,17 @@ PRICING â†“
   );
 }
 
-.plan:nth-child(2) .plan__name, .plan:nth-child(2) .plan__price, .plan:nth-child(2) .plan__target, .plan:nth-child(2) .plan__duration, .plan:nth-child(2) .plan__feature {
+.plan:nth-child(2) .plan__name,
+.plan:nth-child(2) .plan__price,
+.plan:nth-child(2) .plan__target,
+.plan:nth-child(2) .plan__duration,
+.plan:nth-child(2) .plan__feature {
   color: white;
 }
 
 .plan:nth-child(2) .plan__middle {
-  border-top: 2px solid rgb(102,126,234);
-    border-bottom: 2px solid rgb(102,126,234);
-
+  border-top: 2px solid rgb(102, 126, 234);
+  border-bottom: 2px solid rgb(102, 126, 234);
 }
 
 .plan__name {
@@ -804,14 +807,22 @@ TESTIMONIALS â†“
   margin-top: 16px;
 }
 
-.testimonial__title, .testimonials__name {
+.testimonial__role,
+.testimonial__name {
   font-weight: 700;
   color: #243e63;
   font-size: 20px;
   line-height: 1.5;
+  margin-left: 15%;
 }
 
-.testimonials__para {
+.testimonial__role {
+  color: #7c8ba1;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.testimonial__para {
   margin: 16px 0px 40px 0;
   color: #4a5568;
   font-size: 16px;
@@ -823,13 +834,18 @@ TESTIMONIALS â†“
   flex-direction: column;
   padding-left: 64px;
 }
-.testimonials__img .testimonials__description {
+.testimonials__img,
+.testimonials__description {
   width: 50%;
-} 
+}
 
 .testimonial__profile {
   display: flex;
   align-items: center;
+}
+
+.testimonial__rating i {
+  color: rgba(246, 173, 85);
 }
 
 .testimonial__img {
@@ -837,6 +853,44 @@ TESTIMONIALS â†“
   height: 80px;
   border-radius: 50%;
 }
+
+.testimonial__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #edf2f7;
+  border-radius: 50%;
+  margin: 0 12px;
+  transition: all 300ms;
+  border-style: none;
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: rgb(229, 231, 235);
+}
+
+.testimonial__button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.testimonial__button:hover {
+  background-color: rgba(226, 232, 240);
+}
+
 /* 
 
 START / CALL TO ACTION â†“

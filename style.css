@@ -1046,6 +1046,15 @@ footer {
     transition: all 300ms;
 }
 
+.footer__socials {
+  display: flex;
+}
+
+.footer__social--link svg {
+  height: 16px;
+  width: 16px;
+}
+
 .footer__blob--2 {
       position: absolute;
     bottom: 0;

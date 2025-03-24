@@ -1078,15 +1078,24 @@ MOBILE RESPONSIVENESS â†“
 
 */
 
-@media (max-width: 1280px) {
-  header .row {
-    align-items: flex-end;
-  }
-}
-
 @media (max-width: 1024px) {
+    .nav__links {
+    display: none;
+  }
+    .header__wrapper {
+    flex-direction: column;
+  }
   .btn__menu {
     display: block;
+  }
+
+  h1 {
+    text-align: center;
+
+  }
+
+  .header__title-wrapper {
+    width: 100%;
   }
   header .row {
     flex-direction: column;
@@ -1095,6 +1104,8 @@ MOBILE RESPONSIVENESS â†“
   footer {
     padding: 80px 32px;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -1123,5 +1134,18 @@ MOBILE RESPONSIVENESS â†“
   }
   main {
     margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav__links {
+    display: none;
+  }
+  .header__wrapper {
+    flex-direction: column;
+  }
+
+  .header__title-wrapper {
+    width: 100%;
   }
 }

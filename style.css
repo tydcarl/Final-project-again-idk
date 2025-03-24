@@ -902,8 +902,14 @@ START / CALL TO ACTION â†“
   overflow: hidden;
 }
 
+.start__row {
+  display: flex;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
 .start__container {
-      padding: 96px 0;
+    padding: 96px 0;
     width: 100%;
     background-color: rgb(100, 21, 255);
     border-radius: 8px;
@@ -1113,6 +1119,7 @@ MOBILE RESPONSIVENESS â†“
   .nav__logo {
     margin: 8px 0;
     padding-bottom: 4px;
+    flex-direction: column;
   }
   main {
     margin-bottom: 80px;

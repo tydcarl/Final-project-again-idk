@@ -12,6 +12,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -252,8 +257,11 @@ header .row {
   width: 40%;
 }
 
-.picture_1 {
-  width: 85%;
+.picture__1 {
+  width: 140%;
+  max-width: 768px;
+  display: flex;  
+  text-align: center;
 }
 
 .header__description--para {
@@ -1078,8 +1086,39 @@ MOBILE RESPONSIVENESS â†“
 
 */
 
+@media (max-width: 1280px) {
+  .picture__1  {
+    max-width: 512px;
+  }
+
+  .header__description--para {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 1024px) {
-    .nav__links {
+  .section__title {
+    font-size: 36px;
+  }
+  #features .section__title,
+  #pricing .section__title,
+   {
+    font-size: 48px;
+
+  }
+  .header__description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__description--para {
+    margin: 20px 0;
+  }
+  
+  
+  .nav__links {
     display: none;
   }
     .header__wrapper {
@@ -1091,11 +1130,14 @@ MOBILE RESPONSIVENESS â†“
 
   h1 {
     text-align: center;
+    font-size: 30px;
 
   }
 
   .header__title-wrapper {
     width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
   }
   header .row {
     flex-direction: column;
@@ -1104,7 +1146,10 @@ MOBILE RESPONSIVENESS â†“
   footer {
     padding: 80px 32px;
   }
-
+.feature__row {
+  padding: 32px 8px;
+  margin: 0 16px;
+}
 
 }
 
@@ -1121,6 +1166,9 @@ MOBILE RESPONSIVENESS â†“
   #pricing .row {
     margin-top: 40px;
   }
+  .section__para {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1135,8 +1183,44 @@ MOBILE RESPONSIVENESS â†“
   main {
     margin-bottom: 80px;
   }
+
+  .header__email {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header__email--input {
+    position: static;
+    padding: 16px 0;
+    padding-left: 32px;
+    line-height: 1.5;
+  }
+
+  .header__email--btn {
+    width: 100%;
+    padding: 16px 0;
+    margin: 16px 0;
+    margin-bottom: 0px;
+    line-height: 1.5;
+  }
+
+#features .section__title,
+#pricing .section__title {
+  font-size: 36px;
 }
 
+.section__title {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.feature__row {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+}
 @media (max-width: 576px) {
   .nav__links {
     display: none;

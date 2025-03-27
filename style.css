@@ -839,7 +839,7 @@ TESTIMONIALS â†“
   padding-left: 64px;
 }
 .testimonials__img,
-.testimonials__description {
+ {
   width: 50%;
 }
 
@@ -1104,6 +1104,12 @@ MOBILE RESPONSIVENESS â†“
 }
 
 @media (max-width: 1024px) {
+  
+  .plans {
+    flex-direction: column;
+    align-items: center;  
+  }
+  
   .section__title {
     font-size: 36px;
     text-align: center;
@@ -1240,6 +1246,7 @@ MOBILE RESPONSIVENESS â†“
   .values__description {
     width: 100%;
     display: flex;
+    margin-left: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1259,7 +1266,16 @@ MOBILE RESPONSIVENESS â†“
     align-items: center;
 
   }
+.testimonials__img {
+  width: 100%;
+  max-width: 448px;
+}
 
+.testimonials__description {
+  text-align: center;
+  padding-left: 0
+  ;
+}
 
 }
 

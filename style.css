@@ -1168,6 +1168,26 @@ MOBILE RESPONSIVENESS â†“
   #values .row {
     flex-direction: column-reverse;
   }
+
+  .section__tag {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  #quality .quality__description {
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+  }
+
+  .section__para {
+    text-align: center;
+  }
+
+  .steps__img {
+    max-width: 512px;
+    width: 130%;
+  }
   #steps .row,
   #testimonials .row {
     flex-direction: column;
